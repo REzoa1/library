@@ -20,3 +20,7 @@ Bootstrap, Redux Toolkit
 &ensp;&ensp;3.2. Сортировка с вариантами сортировки: relevance, newest;<br />
 &ensp;&ensp;3.3. Пагинация реализована по принципу 'load more';<br />
 &ensp;&ensp;3.4. При клике на карточку происходит переход на детальную страницу книги;<br />
+
+## Netlify:
+Ссылка на задеплоенную версию
+https://jocular-cheesecake-b447e6.netlify.app/

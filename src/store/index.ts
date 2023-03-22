@@ -1,4 +1,4 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import booksReducer from './slices/books';
 
