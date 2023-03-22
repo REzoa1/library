@@ -1,39 +1,116 @@
 .App {
-  text-align: center;
+  background: no-repeat linear-gradient(#000000b3, #000000b3),
+    url("./assets/background.jpg");
+  height: 100vh;
+  background-size: cover;
+  opacity: 0.8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  width: 630px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.wpx-170 {
+  width: 170px;
 }
 
-.App-header {
-  min-height: 100vh;
+.main {
+  padding: 0 13%;
+  background-color: #fff;
+  flex: auto;
+  overflow-y: auto;
+  animation: move 0.5s ease forwards;
+}
+
+.book {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #f3f2f1;
+
+  width: 320px;
+  padding: 30px;
+  height: 400px;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.image {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+  align-self: center;
+  box-shadow: 10px 10px 8px #00000028;
+  margin-bottom: 10px;
+}
+.thumbnail {
+  height: auto;
+  margin: auto;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+.h-36 {
+  height: 36px;
+}
+
+.left {
+  width: 50%;
+  background-color: #f3f2f1;
+}
+.right {
+  width: 100%;
+  padding: 2%;
+}
+
+.description {
+  height: auto;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+@keyframes move {
+  from {
+    margin-top: 12rem;
+    opacity: 0.6;
   }
-  50% {
-    transform: translateY(10px);
+  to {
+    margin-top: 0rem;
+    opacity: 1;
   }
-  100% {
-    transform: translateY(0px);
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 450px;
+  }
+  .booksWrapper {
+    justify-content: center;
+  }
+  .thumbnail {
+    height: 250px;
+    max-width: 250px;
+  }
+  .book {
+    width: 280px;
+  }
+
+  .fd-c {
+    flex-direction: column;
+  }
+  .jc {
+    justify-content: center;
+  }
+  .left {
+    width: 100%;
+  }
+  .description {
+    max-height: 100%;
+    overflow-y: hidden;
+    border: 0 !important;
+    box-shadow: 0 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    width: 310px;
   }
 }
